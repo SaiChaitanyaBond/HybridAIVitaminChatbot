@@ -1,41 +1,53 @@
-# 🥗 Hybrid AI Vitamin Chatbot
+# 🧠 Hybrid AI Vitamin Chatbot
 
-A full-stack **Hybrid AI Chatbot** that combines a **rule-based expert system** with a **Large Language Model (LLM)** from Hugging Face to provide educational information about vitamins, minerals, nutrition, and supplements.
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+![Flask](https://img.shields.io/badge/Flask-3.x-black.svg)
+![AI](https://img.shields.io/badge/AI-HuggingFace-yellow.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-The chatbot intelligently routes simple questions to a fast rule engine while sending complex or open-ended questions to an AI model, providing both speed and flexibility.
+A full-stack AI chatbot built with **Flask**, combining a **rule-based expert system** and a **Large Language Model (LLM)** to answer questions about vitamins, nutrition, and dietary supplements.
 
----
+Unlike traditional chatbots that send every request to an LLM, this project intelligently routes user queries to the most appropriate engine:
 
-## 🚀 Features
-
-- 🤖 Hybrid AI Architecture
-  - Rule-based chatbot for common questions
-  - Hugging Face LLM for complex queries
-- 🧠 Intelligent query routing
-- 💬 Modern web chat interface
-- ⚡ Fast responses for predefined knowledge
-- 🌐 REST API using Flask
-- 📊 Response metadata
-  - Response source
-  - AI model
-  - Processing time
-- 📝 Application logging
-- 🎨 Responsive UI
-- 🔒 Environment variable configuration
+- ⚡ Fast Rule Engine for common questions
+- 🤖 Hugging Face LLM for complex reasoning
+- 🧠 Hybrid Router that decides which engine should answer
 
 ---
 
-## 📸 Application
+# Demo
 
-### Home Screen
+> **Coming Soon**
 
-<img src="docs/images/chatbot_home.png" width="900">
+Add a screenshot here after uploading one to:
 
-> *(Replace this image with a screenshot of your chatbot.)*
+```
+docs/images/chatbot_home.png
+```
+
+```markdown
+![Application Screenshot](docs/images/chatbot_home.png)
+```
 
 ---
 
-## 🏗️ Architecture
+# Features
+
+- Hybrid AI Architecture
+- Rule-based Expert System
+- Hugging Face LLM Integration
+- Intelligent Query Routing
+- REST API using Flask
+- Modern Chat Interface
+- Processing Time Metrics
+- Response Metadata
+- Logging
+- Responsive UI
+- Environment-based Configuration
+
+---
+
+# System Architecture
 
 ```text
                         User
@@ -44,7 +56,7 @@ The chatbot intelligently routes simple questions to a fast rule engine while se
                 HTML / CSS / JavaScript
                           │
                           ▼
-                     Flask REST API
+                    Flask REST API
                           │
                           ▼
               HybridChatbotService
@@ -59,7 +71,7 @@ The chatbot intelligently routes simple questions to a fast rule engine while se
 
 ---
 
-## 📁 Project Structure
+# Project Structure
 
 ```text
 HybridAIVitaminChatbot/
@@ -90,64 +102,69 @@ HybridAIVitaminChatbot/
 ├── config.py
 ├── logging_config.py
 ├── requirements.txt
-├── .env
-└── README.md
+├── README.md
+└── .env
 ```
 
 ---
 
-## ⚙️ Technology Stack
+# Technology Stack
 
-### Backend
+## Backend
 
-- Python 3.11+
+- Python
 - Flask
 - Hugging Face Inference API
-- Python Logging
+- Logging
 
-### Frontend
+## Frontend
 
 - HTML5
 - CSS3
-- JavaScript (ES6)
+- JavaScript
 
-### AI
+## AI
 
 - Hugging Face Hub
-- Qwen 2.5 Instruct Model
+- Qwen2.5 Instruct Model
 
 ---
 
-## 🧠 How It Works
+# Intelligent Routing
 
-The chatbot uses a hybrid decision process.
+The application automatically determines whether a question should be answered by the Rule Engine or the AI model.
 
-### Rule-Based Processing
+### Rule Engine Examples
 
-Questions like:
+```
+Hello
 
-- Hello
-- Goodbye
-- Tell me about Vitamin D deficiency
-- What are the symptoms of Iron deficiency?
+What is Vitamin C?
 
-are answered immediately using the internal knowledge base.
+Symptoms of Iron deficiency
 
----
+Sources of Vitamin D
+```
 
-### AI Processing
-
-Questions like:
-
-- Explain the biochemical pathway of Vitamin D metabolism.
-- Compare Vitamin D2 and Vitamin D3.
-- What are the latest discoveries regarding Vitamin D?
-
-are routed to the Hugging Face Large Language Model.
+These receive near-instant responses.
 
 ---
 
-## 📊 Example Response
+### AI Examples
+
+```
+Explain the biochemical pathway of Vitamin D metabolism.
+
+Compare Vitamin D2 and Vitamin D3.
+
+What are the latest discoveries in Vitamin D research?
+```
+
+These are routed to the Large Language Model.
+
+---
+
+# Example API Response
 
 ```json
 {
@@ -156,27 +173,25 @@ are routed to the Hugging Face Large Language Model.
     "provider": "huggingface",
     "model": "Qwen/Qwen2.5-7B-Instruct",
     "response": "...",
-    "processing_time_ms": 1842.17
+    "processing_time_ms": 1734.26
 }
 ```
 
 ---
 
-## 🚀 Getting Started
+# Installation
 
-### Clone the Repository
+Clone the repository
 
 ```bash
-git clone https://github.com/<your-github-username>/HybridAIVitaminChatbot.git
+git clone https://github.com/SaiChaitanyaBond/HybridAIVitaminChatbot.git
 
 cd HybridAIVitaminChatbot
 ```
 
----
+Create a virtual environment
 
-### Create Virtual Environment
-
-macOS/Linux
+macOS / Linux
 
 ```bash
 python3 -m venv hybrid_ai_chatbot_venv
@@ -192,9 +207,7 @@ python -m venv hybrid_ai_chatbot_venv
 hybrid_ai_chatbot_venv\Scripts\activate
 ```
 
----
-
-### Install Dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -202,26 +215,27 @@ pip install -r requirements.txt
 
 ---
 
-### Configure Environment Variables
+# Configuration
 
 Create a `.env` file.
 
-Example:
+Example
 
 ```text
-HUGGINGFACE_API_TOKEN=your_api_token
+HUGGINGFACE_API_TOKEN=your_token_here
+
 HUGGINGFACE_MODEL=Qwen/Qwen2.5-7B-Instruct
 ```
 
 ---
 
-### Run the Application
+# Run
 
 ```bash
 python app.py
 ```
 
-Open:
+Open
 
 ```
 http://localhost:5001
@@ -229,7 +243,7 @@ http://localhost:5001
 
 ---
 
-## 🧪 Testing
+# Testing
 
 Rule Engine
 
@@ -237,13 +251,13 @@ Rule Engine
 python test_rule_engine.py
 ```
 
-Hugging Face Provider
+AI Provider
 
 ```bash
 python test_huggingface.py
 ```
 
-Hybrid Chatbot
+Hybrid Service
 
 ```bash
 python test_hybrid_chatbot.py
@@ -251,62 +265,61 @@ python test_hybrid_chatbot.py
 
 ---
 
-## 📈 Future Enhancements
+# Future Enhancements
 
-- Conversation memory
-- Streaming AI responses
-- Markdown rendering
-- Dark mode
-- User authentication
-- Chat history
-- Azure App Service deployment
-- Docker support
-- CI/CD using GitHub Actions
-- Unit and integration testing
+- Conversation Memory
+- Chat History
+- Streaming Responses
+- Markdown Rendering
+- Docker Deployment
+- Azure App Service Deployment
+- GitHub Actions CI/CD
+- User Authentication
+- Dark Mode
 - Retrieval-Augmented Generation (RAG)
+- Vector Database Integration
 
 ---
 
-## 📚 Learning Objectives
+# Educational Objectives
 
 This project demonstrates:
 
-- Hybrid AI systems
-- Rule-based expert systems
-- Large Language Model integration
-- REST API development
-- Flask application architecture
-- Frontend and backend integration
-- Logging and monitoring
-- Modular software design
-- Python best practices
+- AI Application Development
+- Hybrid AI Systems
+- Expert Systems
+- REST APIs
+- Flask
+- Large Language Models
+- Software Architecture
+- Modular Design
+- Frontend Integration
+- Python Best Practices
 
 ---
 
-## ⚠️ Disclaimer
+# Disclaimer
 
-This chatbot is intended for **educational purposes only**.
+This application is intended for educational purposes only.
 
-It does **not** provide medical diagnosis or treatment recommendations.
+It does **not** provide medical advice, diagnosis, or treatment recommendations.
 
-Always consult a qualified healthcare professional for medical advice.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+Always consult a qualified healthcare professional regarding medical concerns.
 
 ---
 
-## 👨‍💻 Author
+# Author
 
 **Sai Chaitanya Bondada**
 
-GitHub: https://github.com/<your-github-username>
+GitHub
 
-LinkedIn: *(Add your LinkedIn profile if desired.)*
+https://github.com/SaiChaitanyaBond
+
+Repository
+
+https://github.com/SaiChaitanyaBond/HybridAIVitaminChatbot
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+If you found this project useful, please consider giving it a ⭐.
