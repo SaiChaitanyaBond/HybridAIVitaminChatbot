@@ -1,0 +1,169 @@
+{
+    "complexity_keywords": [
+        "explain",
+        "describe",
+        "compare",
+        "difference",
+        "mechanism",
+        "pathway",
+        "process",
+        "research",
+        "study",
+        "scientific",
+        "metabolism",
+        "biochemical",
+        "cellular",
+        "genetics",
+        "analyze",
+        "analysis",
+        "why",
+        "how does",
+        "how do"
+    ],
+    "intents": [
+        {
+            "intent": "greeting",
+            "patterns": [
+                "hello",
+                "hi",
+                "hey",
+                "good morning",
+                "good afternoon",
+                "good evening"
+            ],
+            "responses": [
+                "Hello! I'm your Hybrid AI Vitamin Deficiency Chatbot. How can I help you today?"
+            ]
+        },
+        {
+            "intent": "goodbye",
+            "patterns": [
+                "bye",
+                "goodbye",
+                "see you",
+                "take care"
+            ],
+            "responses": [
+                "Goodbye! Stay healthy and have a wonderful day."
+            ]
+        },
+        {
+            "intent": "help",
+            "patterns": [
+                "help",
+                "what can you do",
+                "how can you help me",
+                "assist me"
+            ],
+            "responses": [
+                "I can answer questions about vitamin deficiencies, symptoms, food sources, supplements, and healthy nutrition. If I don't know the answer, I'll use AI to help."
+            ]
+        },
+        {
+            "intent": "vitamin_d",
+            "patterns": [
+                "vitamin d",
+                "vitamin d deficiency",
+                "low vitamin d",
+                "lack of vitamin d",
+                "deficiency of vitamin d"
+            ],
+            "responses": [
+                "Vitamin D deficiency may cause fatigue, bone pain, muscle weakness, mood changes, and an increased risk of fractures. Consult your healthcare provider if you suspect a deficiency."
+            ]
+        },
+        {
+            "intent": "vitamin_c",
+            "patterns": [
+                "vitamin c",
+                "low vitamin c",
+                "vitamin c deficiency",
+                "lack of vitamin c"
+            ],
+            "responses": [
+                "Vitamin C deficiency may lead to fatigue, swollen gums, easy bruising, slow wound healing, and weakened immunity."
+            ]
+        },
+        {
+            "intent": "vitamin_b12",
+            "patterns": [
+                "vitamin b12",
+                "b12 deficiency",
+                "low b12",
+                "lack of b12"
+            ],
+            "responses": [
+                "Vitamin B12 deficiency may cause fatigue, numbness or tingling in the hands and feet, memory problems, and anemia."
+            ]
+        },
+        {
+            "intent": "iron",
+            "patterns": [
+                "iron deficiency",
+                "low iron",
+                "iron",
+                "anemia"
+            ],
+            "responses": [
+                "Iron deficiency can cause fatigue, weakness, pale skin, dizziness, shortness of breath, and headaches."
+            ]
+        },
+        {
+            "intent": "calcium",
+            "patterns": [
+                "calcium deficiency",
+                "low calcium",
+                "calcium"
+            ],
+            "responses": [
+                "Calcium deficiency may lead to muscle cramps, numbness, brittle nails, and weakened bones."
+            ]
+        },
+        {
+            "intent": "magnesium",
+            "patterns": [
+                "magnesium",
+                "magnesium deficiency",
+                "low magnesium"
+            ],
+            "responses": [
+                "Magnesium deficiency may cause muscle cramps, fatigue, abnormal heart rhythms, and weakness."
+            ]
+        },
+        {
+            "intent": "food_sources",
+            "patterns": [
+                "foods rich in vitamins",
+                "healthy foods",
+                "foods for vitamin deficiency",
+                "best foods"
+            ],
+            "responses": [
+                "A balanced diet including fruits, vegetables, whole grains, dairy, fish, eggs, nuts, and legumes can help maintain healthy vitamin levels."
+            ]
+        },
+        {
+            "intent": "supplements",
+            "patterns": [
+                "supplements",
+                "vitamin supplements",
+                "should i take supplements",
+                "supplement"
+            ],
+            "responses": [
+                "Vitamin supplements may help some individuals, but they should be taken under the guidance of a healthcare professional."
+            ]
+        },
+        {
+            "intent": "disclaimer",
+            "patterns": [
+                "medical advice",
+                "diagnosis",
+                "can you diagnose me"
+            ],
+            "responses": [
+                "I provide educational information only and cannot diagnose medical conditions. Please consult a qualified healthcare professional for medical advice."
+            ]
+        }
+    ]
+}
