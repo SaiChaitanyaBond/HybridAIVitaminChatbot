@@ -2,10 +2,15 @@
 __pycache__/
 *.py[cod]
 *.pyo
+*.egg-info/
+.eggs/
 
 # Virtual Environment
 hybrid_ai_chatbot_venv/
 venv/
+.venv/
+
+# Environment Variables
 .env
 
 # Logs
@@ -13,12 +18,22 @@ logs/*.log
 
 # IDE
 .vscode/
+.idea/
 
 # macOS
 .DS_Store
 
 # Python cache
 .pytest_cache/
+.mypy_cache/
 
 # Flask
 instance/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Build
+build/
+dist/
